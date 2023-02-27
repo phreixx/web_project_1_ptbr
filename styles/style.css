@@ -13,19 +13,70 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  margin-bottom: 100px;
+
+
+
   /* parameters for the header section */
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.logo_place_header{
+  height: 154px;
+  width: 31px;
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 2;
+
 }
 
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.header__title{
+  width: 730px;
+  height: 102px;
+  font-size: 96px;
+  font-weight: bold;
+  position: absolute;
+  left: 64px;
+  z-index: 2;
+  align-self: center;
+
+
+
+
 }
+.header__subtitle{
+  height: 25px;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: normal;
+
+
+
+}
+
+.header__main-illustration{
+  height: 756px;
+  width: 608px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: 1;
+
+}
+/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.header__square {
+  height: 568px;
+  width: 568px;
+  position:absolute;
+  top: 64px;
+  right:0;
+  background-color: #2F80ED;
+
+}
+
+
