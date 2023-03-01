@@ -14,7 +14,10 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+  position: relative;
+
+
    /*ajustar*/
 
 
@@ -29,6 +32,7 @@
   left: 64px;
   top: 30px;
   z-index: 2;
+
 
 }
 
@@ -58,15 +62,18 @@
 
 
 
+
 }
 
+
 .header__main-illustration{
-  height: 756px;
-  width: 608px;
+  height: 608px;
+  width: 756px;
   position: absolute;
-  right: 0px;
+  right: 0;
   bottom: 0;
   z-index: 1;
+
 
 }
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -80,23 +87,27 @@
 
 }
 
-.two-columns{
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  margin-top: 100px;
+.description{
   margin-bottom: 100px;
+}
+
+
+.two-columns{
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 460px;
+
 
 }
 
 .two-columns__main-text{
-
+  width: 80%;
+  min-width: 784px;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  justify-content: space-between;
+
 
 
 }
@@ -110,12 +121,18 @@
 }
 
 .two-columns__paragraph{
+
 height: 34px;
 font-size: 24px;
 font-weight: normal;
 width: 80%;
 min-width: 784px;
+}
 
+.two-columns__span-accent{
+  height: 34px;
+  font-size: 24px;
+  font-weight: bold;
 
 }
 
@@ -181,5 +198,60 @@ min-width: 784px;
   margin-top: 20px;
 
 }
+
+.feynman{
+  position: relative;
+
+
+}
+
+.feynman__title{
+  width: 775px;
+  height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.feynman__subtitle{
+  height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+
+}
+
+.feynman__image{
+  width: 867px;
+  height: 637px;
+}
+
+.feynman__link{
+
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2F80ED;
+  text-decoration: none;
+
+
+}
+
+
 
 
