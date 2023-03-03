@@ -163,8 +163,6 @@
 .feynman {
   margin-bottom: 100px;
   position: relative;
-  margin-bottom: 100px;
-  position: relative;
 }
 
 .feynman__title {
@@ -187,7 +185,7 @@
   text-align: center;
   justify-content: center;
   z-index: 1;
-  justify-content: center;
+
 }
 
 .feynman__image {
