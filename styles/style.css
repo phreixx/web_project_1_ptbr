@@ -14,8 +14,9 @@
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  margin-bottom: 100px;
   position: relative;
+  background-color: #f2f2f2;
+  overflow: auto;
 
   /*ajustar*/
 
@@ -23,8 +24,8 @@
 }
 
 .logo_place_header {
-  height: 154px;
-  width: 31px;
+  width: 154px;
+  height: 31px;
   position: absolute;
   left: 64px;
   top: 30px;
@@ -36,11 +37,10 @@
   height: 102px;
   font-size: 96px;
   font-weight: bold;
-  position: absolute;
-  left: 64px;
-  z-index: 2;
   align-self: center;
+  padding-left: 64px;
 }
+
 .header__subtitle {
   height: 25px;
   width: 388px;
@@ -60,6 +60,7 @@
   bottom: 0;
   z-index: 1;
 }
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square {
   height: 568px;
@@ -70,11 +71,17 @@
   background-color: #2f80ed;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .two-columns {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  min-height: 460px;
 }
 
 .two-columns__main-text {
@@ -82,7 +89,7 @@
   min-width: 784px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .two-columns__brief {
@@ -91,66 +98,70 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__paragraph {
-  height: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  width: 80%;
-  min-width: 784px;
+  margin: 0;
 }
 
 .two-columns__span-accent {
-  height: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
 
+.digits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
 .section-title {
-  height: 1.15;
+  line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   width: 60%;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0px;
+
 }
 
 .section-subtitle {
-  height: 34px;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
   width: 60%;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 0;
 }
 
 .table {
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 60px;
+  row-gap: 60px
 }
 
 .table__cell {
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  list-style: none;
+
 }
 
 .table_heading {
   height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
@@ -158,39 +169,45 @@
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .feynman {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  height: 790px;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .feynman__title {
   width: 775px;
-  height: 1.15;
+  line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  display: flex;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding-bottom: 70px;
   z-index: 1;
 }
 
 .feynman__subtitle {
-  height: 51px;
+  line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  display: flex;
   text-align: center;
-  justify-content: center;
   z-index: 1;
-
+  margin: 0;
 }
 
 .feynman__image {
   width: 867px;
   height: 637px;
+  position:absolute;
+  left: 0;
+  bottom:0px;
 }
 
 .feynman__link {
@@ -206,113 +223,128 @@
 
 .kaufman {
   background-color: black;
+  padding: 90px 0;
+  position: relative;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.section-title_theme_dark {
+
   color: white;
-  padding: 90px;
+  z-index: 1;
+
 }
 
-.section-title__theme_dark {
-  height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  width: 60%;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-subtitle__theme_dark {
-  height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
 }
 
 .table__theme_dark {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding-top: 80px;
+  row-gap: 0px;
 }
 
 .table__cell_theme_dark {
+  color: white;
+  z-index: 1;
   width: 200px;
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .table__heading_theme_dark {
-  height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  color: white;
+
 }
 
 .table__text_theme_dark {
-  height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 20px;
+  color: white;
+
 }
 
 .footer {
   background-color: black;
-  color: white;
   min-height: 350px;
-
-
-
-
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-sizing:border-box;
 }
 
 .footer__columns {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-left: auto;
-margin-right: auto;
-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
 
+.footer__column{
+  display: flex;
+  flex-direction: column;
 
 
 
 }
 
 .footer__column_content_copyright {
+  flex-basis: 10000px;
+  justify-content:end;
 
 }
 
 .logo_place_footer {
   width: 183px;
   height: 35px;
-
-
 }
 
 .footer__author {
+  color: white;
   margin-top: 18px;
   margin-bottom: 18px;
-  height: 25px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-
 }
 
 .footer__column_content_about {
-  display: flex;
+  row-gap: 20px;
+}
+
+.footer__column_content-social{
+  row-gap: 10px;
+}
+
+.footer__list{
+  list-style: none;
+}
+
+.footer__column-link{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+
+
+}
+
+.footer__social-icons{
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
+
 
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
-  height: 30px;
+  margin: 0;
+  color: white;
+  line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
