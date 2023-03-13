@@ -128,7 +128,7 @@
   text-align: center;
   width: 60%;
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 
 }
 
@@ -138,7 +138,7 @@
   font-weight: normal;
   text-align: center;
   width: 60%;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .table {
@@ -173,13 +173,14 @@
 }
 
 .feynman {
-  padding-top: 100px;
+
   display: flex;
   flex-direction: column;
   align-items:center;
   height: 790px;
-  position: relative;
   background-color: #f2f2f2;
+  position: relative;
+
 }
 
 .feynman__title {
@@ -189,6 +190,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
+  padding-top: 100px;
   padding-bottom: 70px;
   z-index: 1;
 }
@@ -205,9 +207,10 @@
 .feynman__image {
   width: 867px;
   height: 637px;
-  position:absolute;
+  position: absolute;
   left: 0;
-  bottom:0px;
+  bottom: 0;
+
 }
 
 .feynman__link {
@@ -225,7 +228,7 @@
   background-color: black;
   padding: 90px 0;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,37 +268,49 @@
   color: white;
 
 }
+.kaufman__triangle{
+  position: absolute;
+  top: 0;
+  right: -124px;
+  width: 660px;
+  height: 636px;
+
+}
 
 .footer {
   background-color: black;
   min-height: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 60px;
   padding-bottom: 40px;
-  box-sizing:border-box;
+  box-sizing:border-box
 }
 
 .footer__columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .footer__column{
+  margin: 0;
   display: flex;
   flex-direction: column;
 
 
+}
+
+.footer__columns_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+  margin: 0;
 
 }
 
-.footer__column_content_copyright {
-  flex-basis: 10000px;
-  justify-content:end;
-
-}
 
 .logo_place_footer {
   width: 183px;
@@ -311,16 +326,18 @@
   font-weight: normal;
 }
 
-.footer__column_content_about {
+.footer__columns_content_about {
   row-gap: 20px;
+
 }
 
-.footer__column_content-social{
+.footer__columns_content-social{
   row-gap: 10px;
 }
 
 .footer__list{
   list-style: none;
+  padding-left: 0;
 }
 
 .footer__column-link{
