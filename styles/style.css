@@ -37,7 +37,9 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  align-self: center;
+  display: flex;
+  align-items: center;
+
   padding-left: 64px;
 }
 
