@@ -16,7 +16,7 @@
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-  overflow: auto;
+  overflow: hidden;
 
   /*ajustar*/
 
@@ -167,7 +167,7 @@
 
 }
 
-.table_heading {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -259,7 +259,7 @@
 
 .table__theme_dark {
   padding-top: 80px;
-  row-gap: 0px;
+  row-gap: 80px;
 }
 
 .table__cell_theme_dark {
@@ -313,8 +313,6 @@
 }
 
 .footer__columns_content_copyright {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   flex-basis: 711px;
   margin: 0;
@@ -338,11 +336,10 @@
 
 .footer__columns_content_about {
   row-gap: 20px;
-
 }
 
-.footer__columns_content-social{
-  row-gap: 10px;
+.footer__columns_content_social{
+  row-gap: 20px;
 }
 
 .footer__list{
